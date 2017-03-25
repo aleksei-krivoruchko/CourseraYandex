@@ -8,9 +8,7 @@ using Accord.MachineLearning.DecisionTrees;
 using Accord.MachineLearning.DecisionTrees.Learning;
 using Accord.MachineLearning.DecisionTrees.Rules;
 using Accord.Math.Optimization.Losses;
-using Accord.Statistics.Filters;
 using CsvHelper;
-using CsvHelper.Configuration;
 using CsvHelper.TypeConversion;
 
 namespace TasksCSharp.Week2
