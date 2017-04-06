@@ -63,7 +63,8 @@
     <None Include="Week2.fsx" />
     <Content Include="packages.config" />
     <Content Include="Google.DataTable.Net.Wrapper.XML" />
-    <None Include="Week1.fsx" />
+    <None Include="Week1_1.fsx" />
+    <None Include="Week1_2.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Accord">

@@ -20,3 +20,4 @@ d:\Work\SmartInMedia\TestProjects\CourseraYandex\Practice\TasksCSharp\bin\Debug\
 d:\Work\SmartInMedia\TestProjects\CourseraYandex\Practice\TasksCSharp\bin\Debug\Accord.Math.xml
 d:\Work\SmartInMedia\TestProjects\CourseraYandex\Practice\TasksCSharp\bin\Debug\Accord.Math.Core.xml
 d:\Work\SmartInMedia\TestProjects\CourseraYandex\Practice\TasksCSharp\bin\Debug\Accord.Statistics.xml
+d:\Work\SmartInMedia\TestProjects\CourseraYandex\Practice\TasksCSharp\bin\Debug\Data\wine.csv
