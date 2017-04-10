@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data\perceptron-test.csv" />
+    <None Include="Data\perceptron-train.csv" />
     <None Include="Data\titanic.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

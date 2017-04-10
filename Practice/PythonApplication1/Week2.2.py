@@ -1,60 +1,35 @@
 import pandas as pd
+import numpy as np
  
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import KFold
-from sklearn.model_selection import cross_val_score
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.cross_validation import KFold
+from sklearn.cross_validation import cross_val_score
 from sklearn import preprocessing
 from sklearn.datasets import load_boston
                  
 dataset = load_boston()
 
+inputdata = preprocessing.scale(dataset.data)
+output = dataset.target
 
-
-
-
-
-
-
-inputCols = [col for col in df.columns if col not in ['Class']]
-inputDf = df[inputCols].as_matrix()
-inputDf = preprocessing.scale(inputDf)
-
-outputDf = df['Class'].as_matrix()
-
-print(inputDf)
-print(outputDf)
+#print(inputdata)
+#print(output)
 
 foldsCount = 5
-avgMeanTotal = 0
-for k in range(1, 51):
-    print(k)
-    kfold = KFold(n_splits=foldsCount, shuffle=True, random_state=42)
-    meanTotal = 0
-    for train, test in kfold.split(inputDf):
-        #print(train, test) 
+scores = list()
+p_range = np.linspace(1.0, 10.0, num=200)
+for p in p_range:
+    print(p)
+    kfold = KFold(len(output), n_folds=5, shuffle=True, random_state=42)
                
-        int_train = inputDf[train] 
-        int_test = inputDf[test]
-        out_train = outputDf[train]
-        out_test = outputDf[test]
-        
-        #print(int_train, int_train)
-                
-        knn = KNeighborsClassifier(n_neighbors=k)
-        scores = cross_val_score(knn, int_train, out_train, cv=foldsCount)
-        mean = scores.mean()
-        meanTotal = meanTotal + mean
-    avgMean = meanTotal/foldsCount
-    print("MeanAvg: %0.5f" % avgMean)
-    avgMeanTotal = avgMeanTotal + avgMean
+    knn = KNeighborsRegressor(n_neighbors=5,weights='distance',metric='minkowski',p=p)
+    valScore = cross_val_score(knn, inputdata, output, cv=kfold, scoring='neg_mean_squared_error')
+    scores.append(valScore)
+    print(max(valScore))
+           
+vmax = pd.DataFrame(scores, p_range).max(axis=1).sort_values(ascending=False).head(1).index[0]
+print(vmax)
+print(44)
 
-avgMeanResult = avgMeanTotal / 50
-print("avgMeanResult: %0.5f" % avgMeanResult)
-
-# the best result without scaling = 0.74, k=1
-
-
-
-
-
-
+# 1.135678    -11.836924

@@ -10,7 +10,7 @@ import pandas as pd
 
 url="https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"
 csv=requests.get(url).content
-                    
+
 df = pd.read_csv(io.StringIO(csv.decode('utf-8')), sep=",",
                  names = ["Class","Alcohol","MalicAcid","Ash","AlcalinityOfAsh","Magnesium","TotalPhenols","Flavanoids","NonflavanoidPhenols","Proanthocyanins","ColorIntensity","Hue","OD","Proline"])
 
