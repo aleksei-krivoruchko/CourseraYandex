@@ -27,6 +27,7 @@
     <Compile Include="PythonApplication1.py" />
     <Compile Include="Week2.1.py" />
     <Compile Include="Week2.2.py" />
+    <Compile Include="Week3.3.py" />
     <Compile Include="Week3.2.py" />
     <Compile Include="Week3.1.py" />
     <Compile Include="Week2.3.py" />
@@ -35,7 +36,8 @@
     <InterpreterReference Include="{5008e375-df1d-4abb-8b20-9335158201b7}\3.5" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Week3.2.svmData.csv" />
+    <Content Include="Week3.1.svmData.csv" />
+    <Content Include="Week3.3-dataLogistic.csv" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

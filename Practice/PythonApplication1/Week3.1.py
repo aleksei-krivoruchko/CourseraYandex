@@ -3,7 +3,7 @@ import numpy as np
  
 from sklearn.svm import SVC
 
-df = pd.read_csv('D:\Work\Github\CourseraYandex\Practice\PythonApplication1\Week3.2.svmData.csv', header=None)
+df = pd.read_csv('D:\Work\Github\CourseraYandex\Practice\PythonApplication1\Week3.1.svmData.csv', header=None)
 
 y = df.ix[:, 0]
 X = df.ix[:,1:]
