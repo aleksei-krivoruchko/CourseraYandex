@@ -37,6 +37,8 @@
     <InterpreterReference Include="{5008e375-df1d-4abb-8b20-9335158201b7}\3.5" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Week3.4 classification.csv" />
+    <Content Include="Week3.4 scores.csv" />
     <Content Include="Week3.1.svmData.csv" />
     <Content Include="Week3.3-dataLogistic.csv" />
   </ItemGroup>
