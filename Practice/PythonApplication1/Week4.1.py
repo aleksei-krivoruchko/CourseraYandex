@@ -1,4 +1,4 @@
-import pd
+import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import Ridge
