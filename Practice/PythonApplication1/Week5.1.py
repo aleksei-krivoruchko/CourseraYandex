@@ -24,7 +24,6 @@ def r2Scorer(estimator, X, y):
 for i in range(1, 50):     
     forest = RandomForestRegressor(n_estimators=i, random_state=1)
     forest.fit(X, y)
-    predictions = forest.predict(X)
     score = cross_val_score(forest, X=X, y=y, cv=kfold, scoring=r2Scorer)
     print("%s: %s. Avg: %s" % (i, score, sum(score) / len(score)))
                                                                     
