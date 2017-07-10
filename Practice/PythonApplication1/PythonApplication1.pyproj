@@ -27,6 +27,7 @@
     <Compile Include="PythonApplication1.py" />
     <Compile Include="Week2.1.py" />
     <Compile Include="Week2.2.py" />
+    <Compile Include="Week4.2.py" />
     <Compile Include="Week4.1.py" />
     <Compile Include="Week3.4.py" />
     <Compile Include="Week3.3.py" />
@@ -38,12 +39,14 @@
     <InterpreterReference Include="{5008e375-df1d-4abb-8b20-9335158201b7}\3.5" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Week4.2 djia_index.csv" />
     <Content Include="Week3.4 classification.csv" />
     <Content Include="Week3.4 scores.csv" />
     <Content Include="Week3.1.svmData.csv" />
     <Content Include="Week3.3-dataLogistic.csv" />
     <Content Include="Week4.1 salary-test-mini.csv" />
     <Content Include="Week4.1 salary-train.csv" />
+    <Content Include="Week4.2 close_prices.csv" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
