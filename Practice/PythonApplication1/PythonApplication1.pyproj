@@ -27,6 +27,8 @@
     <Compile Include="PythonApplication1.py" />
     <Compile Include="Week2.1.py" />
     <Compile Include="Week2.2.py" />
+    <Compile Include="Week6.1.py" />
+    <Compile Include="Week5.2.py" />
     <Compile Include="Week5.1.py" />
     <Compile Include="Week4.2.py" />
     <Compile Include="Week4.1.py" />
@@ -49,6 +51,8 @@
     <Content Include="Week4.1 salary-train.csv" />
     <Content Include="Week4.2 close_prices.csv" />
     <Content Include="Week5.1 abalone.csv" />
+    <Content Include="Week5.2 gbm-data.csv" />
+    <Content Include="Week6.1 parrots.jpg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
